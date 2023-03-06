@@ -1,10 +1,12 @@
 import React from "react";
+import { Button } from '@material-ui/core'
+
 
 export default function NavTabs({ currentPage, setPage }) {
     return (
         <div>
             <h1>Joseph Hanson</h1>
-            <button
+            <button 
             type="button"
             className="btn btn-danger"
             onClick={() => setPage('About Me')}

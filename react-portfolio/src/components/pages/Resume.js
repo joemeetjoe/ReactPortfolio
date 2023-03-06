@@ -3,6 +3,7 @@ import React from "react";
 export default function Resume() {
     return (
         <div>
+            <a href='./Resume.docx' download>Click to download Resume</a>
             <h1>
                 Experience
             </h1>
