@@ -1,13 +1,14 @@
 import React from "react";
+import { Card } from "@mui/material"
 
 export default function Resume() {
     return (
         <div>
-            <a href='./Resume.docx' download>Click to download Resume</a>
+            <a href='CopyOfResume.pdf' download>Click to download Resume</a>
             <h1>
                 Experience
             </h1>
-            <card>
+            <Card>
                 <h2>
                     International Fire Protection, Austell GA — NICET III Fire Inspector
                     2015 - 2019, 2020-2021
@@ -26,8 +27,8 @@ export default function Resume() {
                     accounts as well. My star accomplishment was managing and inspecting
                     the Georgia Power Plant Bowen account.
                 </p>
-            </card>
-            <card>
+            
+
                 <h2>
                     International Fire Protection, Austell GA —
                     Estimator/Project Manager 2021-2022
@@ -49,8 +50,7 @@ export default function Resume() {
                     My start accomplishment was selling around 400,000 dollars worth of
                     work in my last month of employment.
                 </p>
-            </card>
-            <card>
+            
                 <h2>
                     Fire and Life Safety America, Norcross GA — NICET III Fire Inspector
                     2019-2020
@@ -66,8 +66,6 @@ export default function Resume() {
                     Customer relations were key. My star accomplishment was managing and
                     inspecting the Grady account.
                 </p>
-            </card>
-            <card>
                 <h2>
                     Grace City Church, Temple GA — Youth Pastor, Elder 2016-Present
                 </h2>
@@ -83,8 +81,7 @@ export default function Resume() {
                     over the course of several years and watching them grow into leaders
                     themselves.
                 </p>
-            </card>
-            <card>
+
                 <h2>
                     JR Hanson Homes, Villa Rica Ga, Small Business Owner 2016-Present
                 </h2>
@@ -97,11 +94,11 @@ export default function Resume() {
                     properties, and opening an LLC. Our star accomplishment was opening
                     our first airbnb located in blue ridge, GA in January of this year.
                 </p>
-            </card>
+            </Card>
+            <Card>
             <h1>
                 Education 
             </h1>
-            <card>
                 <h2>
                     NICET III-Certification
                 </h2>
@@ -118,8 +115,7 @@ export default function Resume() {
                     required that I complete continuing education every year to keep my
                     license up to date.
                 </p>
-            </card>
-            <card>
+
                 <h2>
                     Georgia Tech, North Ave NW, Atlanta, GA 30332 — Bootcamp Graduation Certificate
                 </h2>
@@ -129,7 +125,10 @@ export default function Resume() {
                     the principles of Agile software development. Graduation date is March
                     13, 2023.
                 </p>
-            </card>
+
+            </Card>
+            
+
 
         </div>
     )

@@ -1,39 +1,45 @@
 import React from "react";
-import { Button } from '@material-ui/core'
+import { Button, Card } from '@mui/material'
+
+
 
 
 export default function NavTabs({ currentPage, setPage }) {
     return (
         <div>
             <h1>Joseph Hanson</h1>
-            <button 
+            <Button 
+            variant = "contained"
             type="button"
             className="btn btn-danger"
             onClick={() => setPage('About Me')}
             >
                 About Me
-            </button>
-            <button
+            </Button>
+            <Button
+            variant = "contained"
             type="button"
             className="btn btn-danger"
             onClick={() => setPage('Portfolio')}
             >
             Portfolio
-            </button>
-            <button
+            </Button>
+            <Button
+            variant = "contained"
             type="button"
             className="btn btn-danger"
             onClick={() => setPage('Contact')}
             >
             Contact
-            </button>
-            <button
+            </Button>
+            <Button
+            variant = "contained"
             type="button"
             className="btn btn-danger"
             onClick={() => setPage('Resume')}
             >
             Resume
-            </button>
+            </Button>
         </div>
     
     )
