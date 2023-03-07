@@ -1,14 +1,42 @@
 import React from "react";
 import { Card } from "@mui/material"
 
+const css = `
+    .card {
+        background: #73727b;
+        color: white;
+        margin: 30px;
+        padding: 30px;
+    }
+    .articleHeader {
+        color: white;   
+    }
+    a {
+        color: white;
+    }
+    .cardLink {
+        background: #73727b;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        margin-left: 30px;
+        max-width: 140px;
+    }
+`
+
 export default function Resume() {
     return (
         <div>
-            <a href='CopyOfResume.pdf' download>Click to download Resume</a>
-            <h1>
+            <style type = "text/css">{css}</style>
+            <Card className = "cardLink">
+                <a href='CopyOfResume.pdf' download>Click to download Resume</a>
+            </Card>
+            
+            <Card className="card">
+            <h1 className="articleHeader">
                 Experience
             </h1>
-            <Card>
+            
                 <h2>
                     International Fire Protection, Austell GA — NICET III Fire Inspector
                     2015 - 2019, 2020-2021
@@ -95,8 +123,8 @@ export default function Resume() {
                     our first airbnb located in blue ridge, GA in January of this year.
                 </p>
             </Card>
-            <Card>
-            <h1>
+            <Card className="card">
+            <h1 className="articleHeader">
                 Education 
             </h1>
                 <h2>

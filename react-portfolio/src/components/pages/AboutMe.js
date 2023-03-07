@@ -7,6 +7,16 @@ import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 const profilePhoto = require ('./images/profilephoto.jpg');
 
+const css = `
+    .cardContainer {
+        background: #73727b;
+        margin-top: 100px;
+    }
+    .text {
+        color: white;
+    }
+`
+
 
 const Img = styled('img')({
     margin: 'auto',
@@ -18,14 +28,14 @@ const Img = styled('img')({
 export default function AboutMe() {
     return (
         <div>
+            <style type = "text/css">{css}</style>
             <Paper
+            className="cardContainer"
             sx={{
                 p: 2,
                 margin: 'auto',
                 maxWidth: 500,
                 flexGrow: 1,
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
             }}
             >
         
@@ -38,10 +48,10 @@ export default function AboutMe() {
                     <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={2}>
                             <Grid item xs>
-                                <Typography gutterBottom variant="subtitle1" component="div">
+                                <Typography className="text" gutterBottom variant="subtitle1" component="div">
                                     Hello there.
                                 </Typography>
-                                <Typography variant="body2" gutterBottom>
+                                <Typography className="text" variant="body2" gutterBottom>
                                     I am a budding web developer and recent graduate of the Georgia Tech Full Stack Web development boot camp.I am experienced with the
                                     MERN web stack. My hobbies include preaching and playing obscure indie games. 
                                 </Typography>

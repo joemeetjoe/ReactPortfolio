@@ -20,17 +20,34 @@ const Img = styled('img')({
     maxHeight: '100%',
 });
 
+const css = `
+    .cardContainer {
+        background: #73727b;
+
+    }
+    .text {
+        color: white;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+`
+
+
+
 export default function Portfolio() {
     return (
-        <div>
+        <div className="container">
+            <style type = "text/css">{css}</style>
             <Paper
+            className="cardContainer"
             sx={{
                 p: 2,
                 margin: 'auto',
                 maxWidth: 500,
                 flexGrow: 1,
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
             }}
             >
         
@@ -43,13 +60,13 @@ export default function Portfolio() {
                     <Grid item xs={12} sm container>
                         <Grid item xs container direction="column" spacing={2}>
                             <Grid item xs>
-                                <Typography gutterBottom variant="subtitle1" component="div">
+                                <Typography className="text" gutterBottom variant="subtitle1" component="div">
                                     Pokedex app
                                 </Typography>
-                                <Typography variant="body2" gutterBottom>
+                                <Typography className="text" variant="body2" gutterBottom>
                                     This project uses fetch calls to existing apis to render images and info to the page dynamically.
                                 </Typography>
-                                <Link href= 'https://github.com/StamperM/velocirapt-vars--pokedex'>
+                                <Link className="text" href= 'https://github.com/StamperM/velocirapt-vars--pokedex'>
                                     Github Repo
                                 </Link>
                             </Grid>
