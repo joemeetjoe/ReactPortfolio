@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.6b94bf20.css",
+    "main.js": "/ReactPortfolio/static/js/main.1d0f2359.js",
+    "static/media/profilephoto.jpg": "/ReactPortfolio/static/media/profilephoto.bd1840d4be03fb71e5e1.jpg",
+    "static/media/metroidFanPage.png": "/ReactPortfolio/static/media/metroidFanPage.e27215309cc7e5f003e3.png",
+    "static/media/Pokemon.png": "/ReactPortfolio/static/media/Pokemon.828f874cbdd30222051f.png",
+    "static/media/groceryList.png": "/ReactPortfolio/static/media/groceryList.a2e6a12cb4d2cefc2f0b.png",
+    "static/media/socialNetwork.png": "/ReactPortfolio/static/media/socialNetwork.89330ba266c39595f678.png",
+    "static/media/employee.png": "/ReactPortfolio/static/media/employee.dbdd0ec49a1bc180fb1d.png",
+    "static/media/JATE.png": "/ReactPortfolio/static/media/JATE.4c9261e2c21422da036d.png",
+    "index.html": "/ReactPortfolio/index.html",
+    "main.6b94bf20.css.map": "/ReactPortfolio/static/css/main.6b94bf20.css.map",
+    "main.1d0f2359.js.map": "/ReactPortfolio/static/js/main.1d0f2359.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b94bf20.css",
+    "static/js/main.1d0f2359.js"
+  ]
+}
