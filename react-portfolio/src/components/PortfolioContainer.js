@@ -4,6 +4,7 @@ import AboutMe from './pages/AboutMe'
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio"
+import Footer from "./pages/Footer"
 
 
 export default function PortfolioContainer() {
@@ -31,7 +32,8 @@ function RenderPage(){
     return (
         <div>
             <NavTabs currentPage= {currentPage} setPage ={setPage}/>
-            {<RenderPage/>}
+                {<RenderPage/>}
+            {<Footer/>}
         </div>
         
     )

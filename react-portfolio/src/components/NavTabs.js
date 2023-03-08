@@ -25,7 +25,7 @@ export default function NavTabs({ currentPage, setPage }) {
                 <style type = "text/css">{css}</style>
                 <h1>Joseph Hanson</h1>
                 <Button 
-                variant = "contained"
+                variant = {currentPage === 'About Me' ? 'outlined' : 'contained'}
                 type="button"
                 className="btn"
                 onClick={() => setPage('About Me')}
@@ -33,7 +33,7 @@ export default function NavTabs({ currentPage, setPage }) {
                     About Me
                 </Button>
                 <Button
-                variant = "contained"
+                variant = {currentPage === 'Portfolio' ? 'outlined' : 'contained'}
                 type="button"
                 className="btn btn-danger"
                 onClick={() => setPage('Portfolio')}
@@ -41,7 +41,7 @@ export default function NavTabs({ currentPage, setPage }) {
                 Portfolio
                 </Button>
                 <Button
-                variant = "contained"
+                variant = {currentPage === 'Contact' ? 'outlined' : 'contained'}
                 type="button"
                 className="btn btn-danger"
                 onClick={() => setPage('Contact')}
@@ -49,7 +49,7 @@ export default function NavTabs({ currentPage, setPage }) {
                 Contact
                 </Button>
                 <Button
-                variant = "contained"
+                variant = {currentPage === 'Resume' ? 'outlined' : 'contained'}
                 type="button"
                 className="btn btn-danger"
                 onClick={() => setPage('Resume')}
