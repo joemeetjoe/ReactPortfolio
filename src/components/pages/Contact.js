@@ -1,8 +1,8 @@
+// importing in react along with all the components from material UI
 import * as React from 'react';
-import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-
+// css styling for the contact me section
 const css = `
     .contactDiv {
         margin-top: 40px;
@@ -17,9 +17,8 @@ const css = `
         width: 200px;
     }
 `
-
-
-export default function FormPropsTextFields() {
+// rendering the contact me portion of the page when it is called.
+export default function Contact() {
     return (
         <Box
             className='contactDiv'

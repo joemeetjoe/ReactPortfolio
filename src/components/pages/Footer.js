@@ -1,6 +1,7 @@
+// importing in react and the components from material UI
 import React from "react";
 import { Button, Card } from '@mui/material'
-
+// css stylings for the footer portion of the page
 const css = `
     .btn {
         background: #454851;
@@ -19,11 +20,8 @@ const css = `
 
     }
 `
-
-
-
-
-export default function Footer({ currentPage, setPage }) {
+// rendering the footer portion of the page
+export default function Footer() {
     return (
         <div>
             <footer>

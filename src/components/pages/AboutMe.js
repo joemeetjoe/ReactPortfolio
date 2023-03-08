@@ -1,3 +1,4 @@
+// importing in react as well as all of the compontents from the material ui Library
 import React from "react";
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -6,7 +7,7 @@ import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
 const profilePhoto = require ('./images/profilephoto.jpg');
-
+// css stylings for the about me section
 const css = `
     .cardContainer {
         background: #73727b;
@@ -17,14 +18,14 @@ const css = `
     }
 `
 
-
+// styling for the images so they all appear the same size.
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
 });
-
+// exporting the card that will render on the page for the about me section
 export default function AboutMe() {
     return (
         <div>

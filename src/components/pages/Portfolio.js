@@ -1,3 +1,4 @@
+// importing in react, the compontents from Material UI, and the photos neccesary 
 import React from "react";
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -11,14 +12,14 @@ const socialNetwork = require('./images/socialNetwork.png');
 const metroidFanPage = require('./images/metroidFanPage.png');
 const employee = require('./images/employee.png');
 const jate = require('./images/JATE.png');
-
+// css stylings for the portfolio section
 const Img = styled('img')({
     margin: 'auto',
     display: 'block',
     maxWidth: '100%',
     maxHeight: '100%',
 });
-
+// content for the portfolio to be looped through
 const portfolioContent = [
     {
     id: 0,
@@ -63,7 +64,7 @@ const portfolioContent = [
     link: 'https://github.com/joemeetjoe/Text-editor',
     },
 ] 
-
+// css stylings for the 
 const css = `
     .cardContainer {
         background: #73727b;
