@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
@@ -16,7 +17,7 @@ const css = `
         width: 200px;
     }
 `
-// const [currentTextFieldLength, setCurrentTextFieldLength] = useState(0);
+
 
 export default function FormPropsTextFields() {
     return (
@@ -37,6 +38,7 @@ export default function FormPropsTextFields() {
                     label="Required"
                     defaultValue="Name"
                 />
+
                 <TextField
                     required
                     id="outlined-required"
@@ -55,4 +57,3 @@ export default function FormPropsTextFields() {
         </Box>
     );
   }
-    
